@@ -1,9 +1,17 @@
+import subprocess
+import sys
 import streamlit as st
-import boto3
-import pandas as pd
-from io import BytesIO
-import json
-from botocore.exceptions import NoCredentialsError, ClientError
+
+@st.cache_resource
+def install_boto3():
+# Importación condicional de boto3
+subprocess.check_call([sys.executable, "-m", "pip", "install", "boto3"])
+
+try:
+    import boto3
+except ImportError:
+    install_boto3()
+    import boto3
 
 # Configuración de página
 st.set_page_config(
