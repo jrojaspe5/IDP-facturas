@@ -1,2 +1,0 @@
-# Paquetes del sistema para Streamlit Cloud
-# Este archivo es opcional pero puede ayudar con dependencias del sistema
