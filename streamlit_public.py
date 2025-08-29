@@ -32,8 +32,7 @@ def check_authentication():
         password = st.text_input("Contraseña:", type="password")
         
         authorized_emails = [
-            'luisauryechenique07@gmail.com',
-            'josem155@gmail.com'
+            'email@email.com''
         ]
         
         if st.button("Iniciar Sesión"):
