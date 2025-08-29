@@ -70,8 +70,8 @@ check_authentication()
 s3_client = setup_aws()
 
 # Variables de configuración
-INPUT_BUCKET = st.secrets.get("INPUT_BUCKET", "idp-facturas-input-147413889817")
-OUTPUT_BUCKET = st.secrets.get("OUTPUT_BUCKET", "idp-facturas-output-147413889817")
+INPUT_BUCKET = st.secrets.get("INPUT_BUCKET", "idp-facturas-input-XX")
+OUTPUT_BUCKET = st.secrets.get("OUTPUT_BUCKET", "idp-facturas-output-XX")
 
 # Interfaz principal
 st.title("🧾 Procesador Inteligente de Facturas")
@@ -181,5 +181,5 @@ with st.sidebar:
     """)
     
     st.header("👥 Usuarios Autorizados")
-    st.write("- luisauryechenique07@gmail.com")
-    st.write("- josem155@gmail.com")
+    st.write("- ")
+    st.write("- ")
